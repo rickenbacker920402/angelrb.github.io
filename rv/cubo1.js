@@ -1,5 +1,5 @@
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var malla = new THREE.Mesh( geometry, material );
 malla.rotateX(Math.PI/4);
 malla.rotateY(Math.PI/4);
