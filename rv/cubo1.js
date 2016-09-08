@@ -1,4 +1,4 @@
-var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+var geometry = new THREE.BoxGeometry( 10, 10, 10 );
 var material = new THREE.MeshNormalMaterial(  );
 var malla = new THREE.Mesh( geometry, material );
 
