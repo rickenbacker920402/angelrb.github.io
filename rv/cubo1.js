@@ -3,6 +3,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
 var malla = new THREE.Mesh( geometry, material );
 malla.rotateY(Math.PI/4);
 malla.rotateZ(Math.PI/4);
+malla.rotateX(Math.PI/4);
 var escena = new THREE.Scene();
 escena.add( malla );
 var camara = new THREE.PerspectiveCamera();
