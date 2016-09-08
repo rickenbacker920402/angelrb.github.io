@@ -1,9 +1,9 @@
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshNormalMaterial(  );
 var malla = new THREE.Mesh( geometry, material );
-
+malla.rotateY(Math.PI/4);
 malla.rotateZ(Math.PI/4);
-malla.rotateX(Math.PI/2);
+malla.rotateX(Math.PI/4);
 var escena = new THREE.Scene();
 escena.add( malla );
 var camara = new THREE.PerspectiveCamera();
