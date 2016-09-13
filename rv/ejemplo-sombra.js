@@ -1,8 +1,9 @@
 var iluminacion= new THREE.PointLight(0xFFFFFF);
 iluminacion.position.x = 20;
 iluminacion.position.y = 20;
+
 var iluminacion1= new THREE.PointLight(0xFFFFFF);
-iluminacion1.position.x = 20;
+
 iluminacion1.position.y = 20;
 
 var forma = new THREE.SphereGeometry( 1 );
