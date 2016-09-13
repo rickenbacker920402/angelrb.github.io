@@ -11,4 +11,4 @@ var renderizador = new THREE. WebGLRenderer({canvas: lienzo, antialias: true});
 renderizador.setSize(600,600);
 renderizador.render(escena, camara);
 
-<canvas id="basicMaterial" width="600" height="600"></canvas>
+
