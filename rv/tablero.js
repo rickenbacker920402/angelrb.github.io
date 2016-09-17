@@ -13,7 +13,7 @@ camara.lookAt(new THREE.Vector3(45,45,0));
 var iluminacion=new THREE.PointLight(0xFFFFFF);
 iluminacion.position.x=-45;
 iluminacion.position.y=-10;
-iluminacion.position.z=-150;
+iluminacion.position.z=-200;
 
 
 //CASILLA BLANCA
