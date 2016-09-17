@@ -48,7 +48,7 @@ torreMalla3.scale.set(5,5,7);
 torreMalla3.position.set(80,80,-10);
 
 //TABLERO
-var formaTablero=new THREE.BoxGeometry(100,100,0.3,10,10,10);
+var formaTablero=new THREE.BoxGeometry(100,100,7,10,10,10);
 var mallaTablero=new THREE.MeshLambertMaterial({color:0x412a09});
 var Tablero=new THREE.Mesh(formaTablero,mallaTablero);
 
