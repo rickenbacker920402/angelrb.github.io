@@ -2,17 +2,18 @@
 var campoVision = 45; //Grados
 var relacionAspecto = window.innerWidth/window.innerHeight;
 var planoCercano =100;
-var planoLejano = 500;
+var planoLejano = 1000;
 var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercano,planoLejano);
-camara.position.z = 150;
-camara.position.y = -100;
-camara.lookAt(new THREE.Vector3(0,0,0));
+camara.position.z = -150;
+camara.position.x = 45;
+camara.position.y = -50;
+camara.lookAt(new THREE.Vector3(45,45,0));
 
 //ILUMINACION
 var iluminacion=new THREE.PointLight(0xFFFFFF);
-luzPuntual.position.x=150;
-luzPuntual.position.y=-150;
-luzPuntual.position.z=150;
+iluminacion.position.x=-45;
+iluminacion.position.y=-45;
+iluminacion.position.z=-120;
 
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,0.03,10,10,10);
