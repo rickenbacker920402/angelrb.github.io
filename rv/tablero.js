@@ -114,10 +114,10 @@ for(var f=1; f<=8; f++)
   }
 }
 
-casillaBlanca[].castShadow = true;
-casillaBlanca[].receiveShadow = true;
-casillaGris[].castShadow = true;
-casillaGris[].receiveShadow = true;
+casillaBlanca.castShadow = true;
+casillaBlancareceiveShadow = true;
+casillaGris.castShadow = true;
+casillaGris.receiveShadow = true;
 
 escena.add(Tablero);
 escena.add(torreMalla);
