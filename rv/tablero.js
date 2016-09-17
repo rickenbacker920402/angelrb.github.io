@@ -65,6 +65,11 @@ var escena = new THREE.Scene();
 for(var i=1; i<=32; i++){
 casillaBlanca[i] = new THREE.Mesh(formaCasillaBlanca, mallaCasillaBlanca);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
+casillaBlanca[i].castShadow = true;
+casillaBlanca[i].receiveShadow = true;
+casillaGris[i].castShadow = true;
+casillaGris[i]].receiveShadow = true;
+  
 }
 
 for(var f=1; f<=8; f++)
@@ -126,12 +131,9 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerWidth, window.innerHeight);
 renderizador.shadowMapEnabled = true;
 document.body.appendChild(renderizador.domElement);
+
 Tablero.castShadow = true;
 Tablero.receiveShadow = true;
-casillaBlanca.castShadow = true;
-casillaBlanca.receiveShadow = true;
-casillaGris.castShadow = true;
-casillaGris.receiveShadow = true;
 torreMalla.castShadow = true;
 torreMalla1.castShadow = true;
 torreMalla2.castShadow = true;
