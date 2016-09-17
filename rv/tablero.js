@@ -16,11 +16,11 @@ iluminacion.position.y=-45;
 iluminacion.position.z=-120;
 
 //CASILLA BLANCA
-var formaCasillaBlanca=new THREE.BoxGeometry(10,10,0.03,10,10,10);
+var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaBlanca=new THREE.MeshLambertMaterial({color:0xffffff});
 
 //CASILLA GRIS
-var formaCasillaGris=new THREE.BoxGeometry(10,10,0.03,10,10,10);
+var formaCasillaGris=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaGris=new THREE.MeshLambertMaterial({color:0x6b6b6b});
 
 //Torre 1
@@ -48,9 +48,10 @@ torreMalla3.scale.set(5,5,7);
 torreMalla3.position.set(80,80,-10);
 
 //TABLERO
-var formaTablero=new THREE.BoxGeometry(100,100,7,10,10,10);
+var formaTablero=new THREE.BoxGeometry(100,100,10,10,10,10);
 var mallaTablero=new THREE.MeshLambertMaterial({color:0x412a09});
 var Tablero=new THREE.Mesh(formaTablero,mallaTablero);
+Tablero.position.set(45,45,0);
 
 var casillaBlanca = new Array();
 var casillaGris = new Array();
