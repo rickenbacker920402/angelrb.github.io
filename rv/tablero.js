@@ -11,9 +11,9 @@ camara.lookAt(new THREE.Vector3(45,45,0));
 
 //ILUMINACION
 var iluminacion=new THREE.PointLight(0xFFFFFF);
-iluminacion.position.x=-150;
-iluminacion.position.y=-150;
-iluminacion.position.z=-150;
+iluminacion.position.x=-50;
+iluminacion.position.y=-50;
+iluminacion.position.z=0;
 
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
