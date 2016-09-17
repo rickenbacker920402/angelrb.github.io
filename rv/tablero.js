@@ -66,9 +66,7 @@ for(var i=1; i<=32; i++){
 casillaBlanca[i] = new THREE.Mesh(formaCasillaBlanca, mallaCasillaBlanca);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
 
-
-  
-}
+  }
 
 for(var f=1; f<=8; f++)
 {
@@ -77,7 +75,7 @@ for(var f=1; f<=8; f++)
     casillaBlanca[blanca].castShadow = true;
     casillaBlanca[blanca].receiveShadow = true;
     casillaGris[gris].castShadow = true;
-    casillaGris[grid]].receiveShadow = true;
+    casillaGris[gris].receiveShadow = true;
     if(f%2==0)
     {
       if(c%2==0)
