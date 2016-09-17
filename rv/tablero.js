@@ -55,6 +55,10 @@ Tablero.position.set(45,45,0);
 
 var casillaBlanca = new Array();
 var casillaGris = new Array();
+casillaBlanca.castShadow = true;
+casillaBlanca.receiveShadow = true;
+casillaGris.castShadow = true;
+casillaGris.receiveShadow = true;
 var gris=1;
 var blanca=1;
 
@@ -76,16 +80,16 @@ for(var f=1; f<=8; f++)
       {
        casillaGris[gris].position.set((f*10),(c*10),0);
        escena.add(casillaGris[gris]);
-       
-       casillaGris[gris].receiveShadow = true;
+       //casillaGris[gris].castShadow = true;
+       //casillaGris[gris].receiveShadow = true;
        gris=gris+1;
       }
       else
       {
        casillaBlanca[blanca].position.set((f*10),(c*10),0);
        escena.add(casillaBlanca[blanca]);
-       
-       casillaBlanca[blanca].receiveShadow = true;
+       //casillaBlanca[blanca].castShadow = true;
+       //casillaBlanca[blanca].receiveShadow = true;
        blanca=blanca+1;
       }
     }
@@ -95,16 +99,16 @@ for(var f=1; f<=8; f++)
       {
       casillaBlanca[blanca].position.set((f*10),(c*10),0);
       escena.add(casillaBlanca[blanca]);
-      
-      casillaBlanca[blanca].receiveShadow = true;
+      //casillaBlanca[blanca].castShadow = true;
+      //casillaBlanca[blanca].receiveShadow = true;
       blanca=blanca+1;
       }
       else
       {
       casillaGris[gris].position.set((f*10),(c*10),0);
       escena.add(casillaGris[gris]);
-      
-      casillaGris[gris].receiveShadow = true;
+      //casillaGris[gris].castShadow = true;
+      //casillaGris[gris].receiveShadow = true;
       gris=gris+1;
       }
     }
