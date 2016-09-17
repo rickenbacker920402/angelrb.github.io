@@ -53,7 +53,7 @@ var mallaTablero=new THREE.MeshLambertMaterial({color:0x412a09});
 var Tablero=new THREE.Mesh(formaTablero,mallaTablero);
 
 var casillaBlanca = new Array();
-var casillaNegra = new Array();
+var casillaGris = new Array();
 var gris=1;
 var blanca=1;
 
