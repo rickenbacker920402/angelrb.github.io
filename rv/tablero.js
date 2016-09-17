@@ -76,7 +76,7 @@ for(var f=1; f<=8; f++)
       {
        casillaGris[gris].position.set((f*10),(c*10),0);
        escena.add(casillaGris[gris]);
-       casillaGris[gris].castShadow = true;
+       
        casillaGris[gris].receiveShadow = true;
        gris=gris+1;
       }
@@ -84,7 +84,7 @@ for(var f=1; f<=8; f++)
       {
        casillaBlanca[blanca].position.set((f*10),(c*10),0);
        escena.add(casillaBlanca[blanca]);
-       casillaBlanca[blanca].castShadow = true;
+       
        casillaBlanca[blanca].receiveShadow = true;
        blanca=blanca+1;
       }
@@ -95,7 +95,7 @@ for(var f=1; f<=8; f++)
       {
       casillaBlanca[blanca].position.set((f*10),(c*10),0);
       escena.add(casillaBlanca[blanca]);
-      casillaBlanca[blanca].castShadow = true;
+      
       casillaBlanca[blanca].receiveShadow = true;
       blanca=blanca+1;
       }
@@ -103,28 +103,14 @@ for(var f=1; f<=8; f++)
       {
       casillaGris[gris].position.set((f*10),(c*10),0);
       escena.add(casillaGris[gris]);
-      casillaGris[gris].castShadow = true;
+      
       casillaGris[gris].receiveShadow = true;
       gris=gris+1;
       }
     }
   }
 }
-casillaGris[8].castShadow = true;
-casillaGris[16].castShadow = true;
-casillaGris[24].castShadow = true;
-casillaGris[29].castShadow = true;
-casillaGris[30].castShadow = true;
-casillaGris[31].castShadow = true;
-casillaGris[32].castShadow = true;
-casillaBlanca[4].castShadow = true;
-casillaBlanca[12].castShadow = true;
-casillaBlanca[20].castShadow = true;
-casillaBlanca[28].castShadow = true;
-casillaBlanca[29].castShadow = true;
-casillaBlanca[30].castShadow = true;
-casillaBlanca[31].castShadow = true;
-casillaBlanca[32].castShadow = true;
+
 
 
 escena.add(Tablero);
