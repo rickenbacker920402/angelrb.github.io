@@ -65,7 +65,10 @@ var escena = new THREE.Scene();
 for(var i=1; i<=32; i++){
 casillaBlanca[i] = new THREE.Mesh(formaCasillaBlanca, mallaCasillaBlanca);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
-
+casillaBlanca[i].castShadow = true;
+casillaBlanca[i].receiveShadow = true;
+casillaGris[i].castShadow = true;
+casillaGris[i].receiveShadow = true;
   }
 
 for(var f=1; f<=8; f++)
@@ -114,10 +117,7 @@ for(var f=1; f<=8; f++)
   }
 }
 
-casillaBlanca.castShadow = true;
-casillaBlancareceiveShadow = true;
-casillaGris.castShadow = true;
-casillaGris.receiveShadow = true;
+
 
 escena.add(Tablero);
 escena.add(torreMalla);
