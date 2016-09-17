@@ -15,7 +15,6 @@ iluminacion.position.x = -45;
 iluminacion.position.y = -45;
 iluminacion.position.z = -150;
 
-
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaBlanca=new THREE.MeshLambertMaterial({color:0xffffff});
@@ -66,9 +65,7 @@ var escena = new THREE.Scene();
 for(var i=1; i<=32; i++){
 casillaBlanca[i] = new THREE.Mesh(formaCasillaBlanca, mallaCasillaBlanca);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
-casillaBlanca[i].castShadow = true;
 casillaBlanca[i].receiveShadow = true;
-casillaGris[i].castShadow = true;
 casillaGris[i].receiveShadow = true;
   }
 
@@ -83,16 +80,12 @@ for(var f=1; f<=8; f++)
       {
        casillaGris[gris].position.set((f*10),(c*10),0);
        escena.add(casillaGris[gris]);
-       //casillaGris[gris].castShadow = true;
-       //casillaGris[gris].receiveShadow = true;
        gris=gris+1;
       }
       else
       {
        casillaBlanca[blanca].position.set((f*10),(c*10),0);
        escena.add(casillaBlanca[blanca]);
-       //casillaBlanca[blanca].castShadow = true;
-       //casillaBlanca[blanca].receiveShadow = true;
        blanca=blanca+1;
       }
     }
@@ -102,23 +95,17 @@ for(var f=1; f<=8; f++)
       {
       casillaBlanca[blanca].position.set((f*10),(c*10),0);
       escena.add(casillaBlanca[blanca]);
-      //casillaBlanca[blanca].castShadow = true;
-      //casillaBlanca[blanca].receiveShadow = true;
       blanca=blanca+1;
       }
       else
       {
       casillaGris[gris].position.set((f*10),(c*10),0);
       escena.add(casillaGris[gris]);
-      //casillaGris[gris].castShadow = true;
-      //casillaGris[gris].receiveShadow = true;
       gris=gris+1;
       }
     }
   }
 }
-
-
 
 escena.add(Tablero);
 escena.add(torreMalla);
