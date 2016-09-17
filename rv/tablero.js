@@ -110,13 +110,13 @@ for(var f=1; f<=8; f++)
     }
   }
 }
-casillaNegra[8].castShadow = true;
-casillaNegra[16].castShadow = true;
-casillaNegra[24].castShadow = true;
-casillaNegra[29].castShadow = true;
-casillaNegra[30].castShadow = true;
-casillaNegra[31].castShadow = true;
-casillaNegra[32].castShadow = true;
+casillaGris[8].castShadow = true;
+casillaGris[16].castShadow = true;
+casillaGris[24].castShadow = true;
+casillaGris[29].castShadow = true;
+casillaGris[30].castShadow = true;
+casillaGris[31].castShadow = true;
+casillaGris[32].castShadow = true;
 casillaBlanca[4].castShadow = true;
 casillaBlanca[12].castShadow = true;
 casillaBlanca[20].castShadow = true;
