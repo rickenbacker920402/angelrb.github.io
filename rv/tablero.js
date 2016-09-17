@@ -55,10 +55,7 @@ Tablero.position.set(45,45,0);
 
 var casillaBlanca = new Array();
 var casillaGris = new Array();
-casillaBlanca.castShadow = true;
-casillaBlanca.receiveShadow = true;
-casillaGris.castShadow = true;
-casillaGris.receiveShadow = true;
+
 var gris=1;
 var blanca=1;
 
@@ -131,6 +128,10 @@ renderizador.shadowMapEnabled = true;
 document.body.appendChild(renderizador.domElement);
 Tablero.castShadow = true;
 Tablero.receiveShadow = true;
+casillaBlanca.castShadow = true;
+casillaBlanca.receiveShadow = true;
+casillaGris.castShadow = true;
+casillaGris.receiveShadow = true;
 torreMalla.castShadow = true;
 torreMalla1.castShadow = true;
 torreMalla2.castShadow = true;
