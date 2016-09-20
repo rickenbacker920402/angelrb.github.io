@@ -20,6 +20,11 @@ iluminacion1.position.x = -60;
 iluminacion1.position.y = -60;
 iluminacion1.position.z = -100;
 
+var iluminacion2=new THREE.PointLight(0xFFFFFF);
+iluminacion1.position.x = -20;
+iluminacion1.position.y = -20;
+iluminacion1.position.z = 100;
+
 
 
 //CASILLA BLANCA
@@ -121,7 +126,7 @@ escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(iluminacion);
 escena.add(iluminacion1);
-//escena.add(iluminacion2);
+escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
@@ -136,4 +141,6 @@ torreMalla1.castShadow = true;
 torreMalla2.castShadow = true;
 torreMalla3.castShadow = true;
 iluminacion.castShadow = true;
+iluminacion1.castShadow = true;
+iluminacion2.castShadow = true;
 renderizador.render(escena, camara);
