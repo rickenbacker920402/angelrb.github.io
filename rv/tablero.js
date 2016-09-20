@@ -124,9 +124,9 @@ escena.add(torreMalla);
 escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
-escena.add(iluminacion);
+//escena.add(iluminacion);
 escena.add(iluminacion1);
-escena.add(iluminacion2);
+//escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
