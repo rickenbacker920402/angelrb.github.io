@@ -18,7 +18,7 @@ iluminacion.position.z = -150;
 var iluminacion1=new THREE.PointLight(0xFFFFFF);
 iluminacion1.position.x = -60;
 iluminacion1.position.y = -60;
-iluminacion1.position.z = -20;
+iluminacion1.position.z = -40;
 
 
 
@@ -119,7 +119,7 @@ escena.add(torreMalla);
 escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
-//escena.add(iluminacion);
+escena.add(iluminacion);
 escena.add(iluminacion1);
 //escena.add(iluminacion2);
 
