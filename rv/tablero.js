@@ -7,7 +7,7 @@ var camara = new THREE.PerspectiveCamera(campoVision,relacionAspecto,planoCercan
 camara.position.z = -150;
 camara.position.x = 45;
 camara.position.y = -50;
-camara.lookAt(new THREE.Vector3(45,45,0));
+//camara.lookAt(new THREE.Vector3(45,45,0));
 
 //ILUMINACION
 var iluminacion=new THREE.PointLight(0xFFFFFF);
@@ -16,14 +16,11 @@ iluminacion.position.y = -45;
 iluminacion.position.z = -150;
 
 var iluminacion1=new THREE.PointLight(0xFFFFFF);
-iluminacion1.position.x = -20;
-iluminacion1.position.y = -20;
-iluminacion1.position.z = -100;
+iluminacion1.position.x = -150;
+iluminacion1.position.y = 45;
+iluminacion1.position.z = -50;
 
-var iluminacion2=new THREE.PointLight(0xFFFFFF);
-iluminacion2.position.x = -90;
-iluminacion2.position.y = -90;
-iluminacion2.position.z = -200;
+
 
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
@@ -124,7 +121,7 @@ escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(iluminacion);
 escena.add(iluminacion1);
-escena.add(iluminacion2);
+//escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
