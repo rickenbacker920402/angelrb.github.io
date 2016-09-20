@@ -16,9 +16,9 @@ iluminacion.position.y = -45;
 iluminacion.position.z = -150;
 
 var iluminacion1=new THREE.PointLight(0xFFFFFF);
-iluminacion1.position.x = -150;
+iluminacion1.position.x = -100;
 iluminacion1.position.y = 45;
-iluminacion1.position.z = -50;
+iluminacion1.position.z = -40;
 
 
 
