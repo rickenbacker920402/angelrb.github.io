@@ -15,6 +15,16 @@ iluminacion.position.x = -45;
 iluminacion.position.y = -45;
 iluminacion.position.z = -150;
 
+var iluminacion1=new THREE.PointLight(0xFFFFFF);
+iluminacion1.position.x = -20;
+iluminacion1.position.y = -20;
+iluminacion1.position.z = -100;
+
+var iluminacion2=new THREE.PointLight(0xFFFFFF);
+iluminacion2.position.x = -90;
+iluminacion2.position.y = -90;
+iluminacion2.position.z = -200;
+
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaBlanca=new THREE.MeshLambertMaterial({color:0xffffff});
@@ -113,6 +123,8 @@ escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(iluminacion);
+escena.add(iluminacion1);
+escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
