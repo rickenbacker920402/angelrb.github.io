@@ -42,19 +42,27 @@ torreMalla.scale.set(5,5,7);
 torreMalla.position.set(10,10,-10);
 
 //Torre 2
+material2.transparent = true;
+material2.opacity = 0.75;
 var torreMalla1 = new THREE.Mesh(torreForma,material2);
 torreMalla1.rotateX(Math.PI*3/2);
 torreMalla1.scale.set(5,5,7);
 torreMalla1.position.set(10,80,-10);
 
 //Torre 3
-var torreMalla2 = new THREE.Mesh(torreForma,material);
+var material3 = new THREE.MeshLambertMaterial({color : 0xfafdff});
+material3.opacity = 0.5;
+material3.transparent = true;
+var torreMalla2 = new THREE.Mesh(torreForma,material3);
 torreMalla2.rotateX(Math.PI*3/2);
 torreMalla2.scale.set(5,5,7);
 torreMalla2.position.set(80,10,-10);
 
 //Torre 4
-var torreMalla3 = new THREE.Mesh(torreForma,material2);
+var material4 = new THREE.MeshLambertMaterial({color : 0x2c4d64});
+material4.opacity = 0.25;
+material4.transparent = true;
+var torreMalla3 = new THREE.Mesh(torreForma,material4);
 torreMalla3.rotateX(Math.PI*3/2);
 torreMalla3.scale.set(5,5,7);
 torreMalla3.position.set(80,80,-10);
