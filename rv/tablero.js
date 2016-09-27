@@ -10,20 +10,20 @@ camara.position.y = -50;
 camara.lookAt(new THREE.Vector3(45,45,0));
 
 //ILUMINACION
-var iluminacion=new THREE.PointLight(0xFFFFFF);
+var iluminacion=new THREE.PointLight(0xFF00FF);
 iluminacion.position.x = -45;
 iluminacion.position.y = -45;
 iluminacion.position.z = -150;
 
-var iluminacion1=new THREE.PointLight(0xFFFFFF);
-iluminacion1.position.x = 50;
-iluminacion1.position.y = 50;
-iluminacion1.position.z = 50;
+var iluminacion1=new THREE.PointLight(0x00FFFF);
+iluminacion1.position.x = 150;
+iluminacion1.position.y = 150;
+iluminacion1.position.z = -150;
 
-var iluminacion2=new THREE.PointLight(0xFFFFFF);
-iluminacion1.position.x = -20;
-iluminacion1.position.y = -20;
-iluminacion1.position.z = 100;
+var iluminacion2=new THREE.PointLight(0xFFFF00);
+iluminacion1.position.x = 150;
+iluminacion1.position.y = -50;
+iluminacion1.position.z = -150;
 
 
 
@@ -124,9 +124,9 @@ escena.add(torreMalla);
 escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
-//escena.add(iluminacion);
+escena.add(iluminacion);
 escena.add(iluminacion1);
-//escena.add(iluminacion2);
+escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
@@ -140,7 +140,7 @@ torreMalla.castShadow = true;
 torreMalla1.castShadow = true;
 torreMalla2.castShadow = true;
 torreMalla3.castShadow = true;
-//iluminacion.castShadow = true;
+iluminacion.castShadow = true;
 iluminacion1.castShadow = true;
-//iluminacion2.castShadow = true;
+iluminacion2.castShadow = true;
 renderizador.render(escena, camara);
