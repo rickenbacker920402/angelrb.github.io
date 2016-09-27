@@ -13,17 +13,17 @@ camara.lookAt(new THREE.Vector3(45,45,0));
 var iluminacion=new THREE.PointLight(0xFF00FF);
 iluminacion.position.x = -45;
 iluminacion.position.y = -45;
-iluminacion.position.z = -150;
+iluminacion.position.z = -120;
 
 var iluminacion1=new THREE.PointLight(0x00FFFF);
-iluminacion1.position.x = 150;
-iluminacion1.position.y = 150;
-iluminacion1.position.z = -150;
+iluminacion1.position.x = 145;
+iluminacion1.position.y = 145;
+iluminacion1.position.z = -120;
 
 var iluminacion2=new THREE.PointLight(0xFFFF00);
-iluminacion1.position.x = 150;
-iluminacion1.position.y = -50;
-iluminacion1.position.z = -150;
+iluminacion1.position.x = 145;
+iluminacion1.position.y = -45;
+iluminacion1.position.z = -120;
 
 
 
