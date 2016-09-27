@@ -15,16 +15,6 @@ iluminacion.position.x = -45;
 iluminacion.position.y = -45;
 iluminacion.position.z = -120;
 
-var iluminacion1=new THREE.PointLight(0x00FFFF);
-iluminacion1.position.x = 145;
-iluminacion1.position.y = 145;
-iluminacion1.position.z = -120;
-
-var iluminacion2=new THREE.PointLight(0xFFFF00);
-iluminacion2.position.x = 145;
-iluminacion2.position.y = -45;
-iluminacion2.position.z = -120;
-
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaBlanca=new THREE.MeshLambertMaterial({color:0xffffff});
@@ -40,27 +30,19 @@ torreMalla.scale.set(5,5,7);
 torreMalla.position.set(10,10,-10);
 
 //Torre 2
-material2.transparent = true;
-material2.opacity = 0.75;
 var torreMalla1 = new THREE.Mesh(torreForma,material2);
 torreMalla1.rotateX(Math.PI*3/2);
 torreMalla1.scale.set(5,5,7);
 torreMalla1.position.set(10,80,-10);
 
 //Torre 3
-var material3 = new THREE.MeshLambertMaterial({color : 0xfafdff});
-material3.opacity = 0.5;
-material3.transparent = true;
-var torreMalla2 = new THREE.Mesh(torreForma,material3);
+var torreMalla2 = new THREE.Mesh(torreForma,material);
 torreMalla2.rotateX(Math.PI*3/2);
 torreMalla2.scale.set(5,5,7);
 torreMalla2.position.set(80,10,-10);
 
 //Torre 4
-var material4 = new THREE.MeshLambertMaterial({color : 0x2c4d64});
-material4.opacity = 0.25;
-material4.transparent = true;
-var torreMalla3 = new THREE.Mesh(torreForma,material4);
+var torreMalla3 = new THREE.Mesh(torreForma,material2);
 torreMalla3.rotateX(Math.PI*3/2);
 torreMalla3.scale.set(5,5,7);
 torreMalla3.position.set(80,80,-10);
@@ -131,8 +113,6 @@ escena.add(torreMalla1);
 escena.add(torreMalla2);
 escena.add(torreMalla3);
 escena.add(iluminacion);
-escena.add(iluminacion1);
-escena.add(iluminacion2);
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
@@ -147,6 +127,4 @@ torreMalla1.castShadow = true;
 torreMalla2.castShadow = true;
 torreMalla3.castShadow = true;
 iluminacion.castShadow = true;
-iluminacion1.castShadow = true;
-iluminacion2.castShadow = true;
 renderizador.render(escena, camara);
