@@ -10,7 +10,7 @@ camara.position.y = -50;
 camara.lookAt(new THREE.Vector3(45,45,0));
 
 //ILUMINACION
-var iluminacion=new THREE.PointLight(0xFF00FF);
+var iluminacion=new THREE.PointLight(0xFFFFFF);
 iluminacion.position.x = -45;
 iluminacion.position.y = -45;
 iluminacion.position.z = -120;
