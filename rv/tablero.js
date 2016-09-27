@@ -25,8 +25,6 @@ iluminacion2.position.x = 145;
 iluminacion2.position.y = -45;
 iluminacion2.position.z = -120;
 
-
-
 //CASILLA BLANCA
 var formaCasillaBlanca=new THREE.BoxGeometry(10,10,10,10,10,10);
 var mallaCasillaBlanca=new THREE.MeshLambertMaterial({color:0xffffff});
