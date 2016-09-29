@@ -45,7 +45,7 @@ TEXTURACB.malla.rotateX(0.01);
 TEXTURACB.malla.rotateY(0.01);
 }
 TEXTURACB.renderizador.render(TEXTURACB.escena, TEXTURACB.camara);
-}
+
 
 TEXTURACB.setup();
 TEXTURACB.loop();
