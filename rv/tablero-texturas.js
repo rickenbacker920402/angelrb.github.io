@@ -35,7 +35,7 @@ TEXTURACB.malla = new THREE.Mesh( new THREE.BoxGeometry(10,10,10,10,10,10), mate
 
 TEXTURACB.setup = function(){
 TEXTURACB.escena = new THREE.Scene();
-TEXTURA.renderizador = new THREE.WebGLRenderer();
+TEXTURACB.renderizador = new THREE.WebGLRenderer();
 var cargadorcb = new THREE.TextureLoader();
 cargadorcb.load("earth.jpg", TEXTURACB.retrollamada);
 TEXTURACB.renderizador.render(TEXTURACB.escena, camara);
