@@ -38,13 +38,8 @@ TEXTURACB.escena = new THREE.Scene();
 
 var cargadorcb = new THREE.TextureLoader();
 cargadorcb.load("earth.jpg", TEXTURACB.retrollamada);
-
+TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);-
 }
-if (TEXTURACB.malla !== undefined) {
-TEXTURACB.malla.rotateX(0.01);
-TEXTURACB.malla.rotateY(0.01);
-}
-
 
 
 TEXTURACB.setup();
@@ -171,5 +166,5 @@ torreMalla3.castShadow = true;
 iluminacion.castShadow = true;
 iluminacion1.castShadow = true;
 iluminacion2.castShadow = true;
-TEXTURACB.renderizador.render(escena, camara);
+
 renderizador.render(escena, camara);
