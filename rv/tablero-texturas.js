@@ -154,7 +154,7 @@ escena.add(torreMalla3);
 escena.add(iluminacion);
 escena.add(iluminacion1);
 escena.add(iluminacion2);
-TEXTURACB.escena.add(TEXTURACB.malla);
+
 
 //RENDERIZADOR
 var renderizador = new THREE.WebGLRenderer();
