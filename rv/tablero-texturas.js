@@ -102,7 +102,7 @@ var blanca=1;
 var escena = new THREE.Scene();
 
 for(var i=1; i<=32; i++){
-casillaBlanca[i] = new THREE.Mesh(TEXTURACB.malla, materialcb);
+casillaBlanca[i] = new THREE.Mesh(TEXTURACB.retrollamada);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
 casillaBlanca[i].receiveShadow = true;
 casillaGris[i].receiveShadow = true;
