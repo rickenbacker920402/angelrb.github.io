@@ -38,7 +38,7 @@ TEXTURACB.escena = new THREE.Scene();
 
 var cargadorcb = new THREE.TextureLoader();
 cargadorcb.load("earth.jpg", TEXTURACB.retrollamada);
-TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);-
+TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);
 }
 
 
