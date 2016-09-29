@@ -44,11 +44,11 @@ if (TEXTURACB.malla !== undefined) {
 TEXTURACB.malla.rotateX(0.01);
 TEXTURACB.malla.rotateY(0.01);
 }
-TEXTURACB.renderizador.render(TEXTURACB.escena, TEXTURACB.camara);
+
 
 
 TEXTURACB.setup();
-TEXTURACB.loop();
+
 
 //CASILLA GRIS
 var formaCasillaGris=new THREE.BoxGeometry(10,10,10,10,10,10);
@@ -171,4 +171,5 @@ torreMalla3.castShadow = true;
 iluminacion.castShadow = true;
 iluminacion1.castShadow = true;
 iluminacion2.castShadow = true;
+TEXTURACB.renderizador.render(escena, camara);
 renderizador.render(escena, camara);
