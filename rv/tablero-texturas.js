@@ -28,27 +28,27 @@ iluminacion2.position.z = -120;
 //CASILLA BLANCA
 var TEXTURACB = new Object();
 TEXTURACB.retrollamada = function (texturacb){
-var material = new THREE.MeshBasicMaterial({ map: texturacb} );
-TEXTURACB.malla = new THREE.Mesh( new THREE.BoxGeometry(10,10,10,10,10,10), material);
+var materialcb = new THREE.MeshBasicMaterial({ map: texturacb} );
+TEXTURACB.malla = new THREE.Mesh( new THREE.BoxGeometry(10,10,10,10,10,10), materialcb);
 
 }
 
-TEXTURA.setup = function(){
-TEXTURA.escena = new THREE.Scene();
+TEXTURACB.setup = function(){
+TEXTURACB.escena = new THREE.Scene();
 
-var cargador = new THREE.TextureLoader();
-cargador.load("earth.jpg", TEXTURA.retrollamada);
+var cargadorcb = new THREE.TextureLoader();
+cargadorcb.load("earth.jpg", TEXTURACB.retrollamada);
 
 }
-if (TEXTURA.malla !== undefined) {
-TEXTURA.malla.rotateX(0.01);
-TEXTURA.malla.rotateY(0.01);
+if (TEXTURACB.malla !== undefined) {
+TEXTURACB.malla.rotateX(0.01);
+TEXTURACB.malla.rotateY(0.01);
 }
-TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);
+TEXTURACB.renderizador.render(TEXTURACB.escena, TEXTURACB.camara);
 }
 
-TEXTURA.setup();
-TEXTURA.loop();
+TEXTURACB.setup();
+TEXTURACB.loop();
 
 //CASILLA GRIS
 var formaCasillaGris=new THREE.BoxGeometry(10,10,10,10,10,10);
@@ -102,7 +102,7 @@ var blanca=1;
 var escena = new THREE.Scene();
 
 for(var i=1; i<=32; i++){
-casillaBlanca[i] = new THREE.Mesh(formaCasillaBlanca, mallaCasillaBlanca);
+casillaBlanca[i] = new THREE.Mesh(TEXTURACB.malla, materialcb);
 casillaGris[i] = new THREE.Mesh(formaCasillaGris, mallaCasillaGris);
 casillaBlanca[i].receiveShadow = true;
 casillaGris[i].receiveShadow = true;
